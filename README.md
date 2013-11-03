@@ -17,7 +17,7 @@ Create a python-2.6 application
 Add this upstream repo
 
     cd moinmoin
-    git remote add upstream -m master git://github.com/EddyRespondek/moinmoin-openshift-example.git
+    git remote add upstream -m master git://github.com/friedrichg/moinmoin-openshift-example.git
     git pull -s recursive -X theirs upstream master
     
 Then push the repo upstream
