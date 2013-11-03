@@ -1,3 +1,6 @@
+EddyRespondek's version doesn't work. This is an attempt to fix it
+
+---------------------------
 MoinMoin on OpenShift
 =====================
 
