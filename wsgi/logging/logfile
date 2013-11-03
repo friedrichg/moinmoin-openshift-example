@@ -20,7 +20,7 @@ class=logging.handlers.TimedRotatingFileHandler
 class.suffix = "-%Y%m%d-%H%M%S"
 formatter=logfile
 level=%(loglevel)s
-args=(os.environ['OPENSHIFT_LOG_DIR'] + '/moin.log', 'midnight', 1)
+args=(os.environ['OPENSHIFT_PYTHON_LOG_DIR'] + '/moin.log', 'midnight', 1)
 
 [formatter_logfile]
 format=%(levelname)s %(asctime)s %(name)s:%(lineno)d %(message)s
