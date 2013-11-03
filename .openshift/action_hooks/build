@@ -5,14 +5,14 @@
 # could be python, php, ruby, etc.
 
 # Activate VirtualEnv in order to use the correct libraries
-source $OPENSHIFT_GEAR_DIR/virtenv/bin/activate
+source $OPENSHIFT_PYTHON_DIR/virtenv/bin/activate
 
 DATA_DIR="${OPENSHIFT_DATA_DIR}data"
 UNDERLAY_DIR="${OPENSHIFT_DATA_DIR}underlay"
 PLUGIN_DIR="${DATA_DIR}/plugin"
 REPO_PLUGIN_DIR="${OPENSHIFT_REPO_DIR}wsgi/plugin"
 
-MOIN_SHARE="${OPENSHIFT_GEAR_DIR}virtenv/lib/python*/site-packages/moin-*-py*.egg/share/moin"
+MOIN_SHARE="${OPENSHIFT_PYTHON_DIR}virtenv/lib/python*/site-packages/moin-*-py*.egg/share/moin"
 
 if [ ! -d $DATA_DIR ]; then
     echo "Copying ${MOIN_SHARE}/data to ${OPENSHIFT_DATA_DIR}"
