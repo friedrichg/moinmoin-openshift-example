@@ -1,6 +1,6 @@
 EddyRespondek's version doesn't work. This is an attempt to fix it *DONE*
 
-Now I am trying to make it work with 1.8.8
+Now I am trying to make it work with 1.8.7 *DONE Check below for more instructions*
 
 ---------------------------
 MoinMoin on OpenShift
@@ -24,6 +24,12 @@ Add this upstream repo
     cd moinmoin
     git remote add upstream -m master git://github.com/friedrichg/moinmoin-openshift-example.git
     git pull -s recursive -X theirs upstream master
+
+If you want to try moinmoin 1.8.7 (instead of moinmoin 1.9) run this:
+
+    cp .openshift/action_hooks/build-1.8 .openshift/action_hooks/build
+    cp setup.py-1.8 setup.py
+    cp wsgi/application-1.8 wsgi/application
     
 Then push the repo upstream
 
