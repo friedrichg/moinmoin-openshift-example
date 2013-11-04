@@ -1,4 +1,6 @@
-EddyRespondek's version doesn't work. This is an attempt to fix it
+EddyRespondek's version doesn't work. This is an attempt to fix it *DONE*
+
+Now I am trying to make it work with 1.8.8
 
 ---------------------------
 MoinMoin on OpenShift
